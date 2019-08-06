@@ -10666,7 +10666,7 @@ ScrollFrameMorph.prototype.scrollX = function (steps) {
         newX;
 
     if (this.vBar.isVisible) {
-        r -= this.vBar.width();
+        r -= this.scrollBarSize;
     }
 
     newX = cl + steps;
@@ -10689,7 +10689,7 @@ ScrollFrameMorph.prototype.scrollY = function (steps) {
         newY;
 
     if (this.hBar.isVisible) {
-        b -= this.hBar.height();
+        b -= this.scrollBarSize);
     }
 
     newY = ct + steps;
